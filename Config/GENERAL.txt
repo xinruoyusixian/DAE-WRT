@@ -1,43 +1,57 @@
-CONFIG_PACKAGE_luci-app-openclash=y
-CONFIG_PACKAGE_luci-app-openlist=y
+# Libraries
+CONFIG_USE_APK=n  #APK关闭    启动istore 需要关闭
+#istore相关
+CONFIG_PACKAGE_luci-lib-ipkg=y #IPK包
+CONFIG_PACKAGE_taskd=y
+CONFIG_PACKAGE_luci-lib-xterm=y
+CONFIG_PACKAGE_luci-lib-taskd=y
+CONFIG_PACKAGE_luci-app-store=y
+#istore相关
+CONFIG_PACKAGE_luci-app-pbr=y #策略分流
+CONFIG_PACKAGE_libopenssl-legacy=y
+CONFIG_PACKAGE_qrencode=y
+CONFIG_PACKAGE_luci-app-smartdns=y
+CONFIG_PACKAGE_luci-app-sqm=y
+CONFIG_PACKAGE_rsyncd=y
+CONFIG_PACKAGE_rsync=y
+CONFIG_PACKAGE_luci-app-taskplan=y
+CONFIG_PACKAGE_luci-app-watchdog=y
+CONFIG_PACKAGE_luci-app-ddnsto=y
+#流量监控
+CONFIG_PACKAGE_luci-app-wrtbwmon=y
+CONFIG_PACKAGE_wrtbwmon=y
+#bandix
+#timsaya/luci-app-bandix/
+#timsaya/openwrt-bandix
+CONFIG_PACKAGE_luci-app-bandix=y
+CONFIG_PACKAGE_bandix=y
+#内网穿透
+CONFIG_PACKAGE_luci-app-easytier=y
+#micropyhton 
+CONFIG_PACKAGE_micropython-lib=y
+CONFIG_PACKAGE_luci-app-filebrowser-go=y
+
+#文件管理
+CONFIG_PACKAGE_luci-app-filemanager=y
+
+
 CONFIG_PACKAGE_luci-app-samba4=y
-CONFIG_PACKAGE_luci-app-tailscale=y
-CONFIG_PACKAGE_luci-app-dockerman=y
 CONFIG_PACKAGE_luci-app-ramfree=y
 CONFIG_PACKAGE_luci-app-ttyd=y
 CONFIG_PACKAGE_luci-app-cpufreq=y
 CONFIG_PACKAGE_luci-app-daed=y
-CONFIG_PACKAGE_luci-app-dockerman=y
 
-#科学插件调整
-#CONFIG_PACKAGE_luci-app-homeproxy=y
-#CONFIG_PACKAGE_luci-app-daed=y
-#CONFIG_PACKAGE_luci-app-dae=y
-#CONFIG_PACKAGE_luci-app-nikki=y
-CONFIG_PACKAGE_luci-app-momo=y
+
+
 #增加插件
 CONFIG_PACKAGE_luci-app-autoreboot=y
-#CONFIG_PACKAGE_luci-app-gecoosac=y
-#CONFIG_PACKAGE_luci-app-netspeedtest=y
-#CONFIG_PACKAGE_luci-app-partexp=y
-#CONFIG_PACKAGE_luci-app-samba4=y
-#CONFIG_PACKAGE_luci-app-tailscale=y
 CONFIG_PACKAGE_luci-app-upnp=y
 CONFIG_PACKAGE_luci-app-wolplus=y
-#CONFIG_PACKAGE_luci-app-advancedplus=n
-#CONFIG_PACKAGE_luci-theme-kucat=y
 CONFIG_PACKAGE_luci-theme-argon=y
-#CONFIG_PACKAGE_luci-proto-wireguard=y
-#CONFIG_PACKAGE_luci-app-zerotier=y
-#CONFIG_PACKAGE_luci-app-vlmcsd=y
 CONFIG_PACKAGE_luci-app-ttyd=y
 CONFIG_PACKAGE_luci-app-cpufreq=y
-#CONFIG_PACKAGE_luci-app-ddns-go=y
-#CONFIG_PACKAGE_luci-app-gecoosac=y
 CONFIG_PACKAGE_luci-app-pushbot=y
-#CONFIG_PACKAGE_luci-app-mwan3=y
-#删除插件
-CONFIG_PACKAGE_luci-app-wol=n
+
 #参数调整
 CONFIG_CCACHE=y
 CONFIG_DEVEL=y
@@ -138,6 +152,7 @@ CONFIG_PACKAGE_bash=y
 CONFIG_PACKAGE_bind-dig=y
 # CONFIG_PACKAGE_bind-host is not set
 CONFIG_PACKAGE_bind-nslookup=y
+
 
 
 
