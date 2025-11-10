@@ -49,9 +49,9 @@ jobs:
       #默认WIFI名称
       WRT_SSID: NERCH_Plus
       #默认WIFI密码
-      WRT_WORD: 8765432101
+      WRT_WORD: 12345678
       #默认地址
-      WRT_IP: 10.0.0.1
+      WRT_IP: 192.168.100.1
       #默认密码，仅作提示，修改无用
       WRT_PW: admin
       #源码链接
@@ -66,5 +66,6 @@ jobs:
       WRT_TEST: ${{inputs.TEST}}
 
       CI_NAME: ${{github.workflow}}
+
 
 
