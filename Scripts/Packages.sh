@@ -78,6 +78,43 @@ UPDATE_PACKAGE "viking" "VIKINGYFY/packages" "main" "" "luci-app-timewol luci-ap
 
 UPDATE_PACKAGE "luci-app-daed" "QiuSimons/luci-app-daed" "master"
 UPDATE_PACKAGE "luci-app-pushbot" "zzsj0928/luci-app-pushbot" "master"
+
+
+UPDATE_PACKAGE "luci-app-taskplan" "xinruoyusixian/alan-package" "main" "pkg"   
+UPDATE_PACKAGE "luci-app-nft-timecontrol" "xinruoyusixian/alan-package" "main" "pkg"
+
+UPDATE_PACKAGE "luci-app-eqosplus" "xinruoyusixian/alan-package" "main"  "pkg"
+
+UPDATE_PACKAGE "luci-app-watchdog" "xinruoyusixian/alan-package" "main" "pkg"
+UPDATE_PACKAGE "watchdog" "xinruoyusixian/alan-package" "main" "pkg"
+
+UPDATE_PACKAGE "luci-app-unishare" "xinruoyusixian/alan-package" "main" "pkg"
+UPDATE_PACKAGE "luci-app-ddnsto" "xinruoyusixian/alan-package" "main" "pkg"
+UPDATE_PACKAGE "ddnsto" "xinruoyusixian/alan-package" "main" "pkg"
+UPDATE_PACKAGE "unishare" "xinruoyusixian/alan-package" "main" "pkg"
+UPDATE_PACKAGE "webdav2" "xinruoyusixian/alan-package" "main" "pkg"
+
+UPDATE_PACKAGE "luci-app-wrtbwmon" "xinruoyusixian/alan-package" "main" "pkg"
+
+UPDATE_PACKAGE "wrtbwmon" "xinruoyusixian/alan-package" "main" "pkg"
+UPDATE_PACKAGE "wrtbwmon" "xinruoyusixian/alan-package" "main" "pkg"
+
+UPDATE_PACKAGE "quickfile" "xinruoyusixian/alan-package" "main" "pkg"
+UPDATE_PACKAGE "luci-app-quickfile" "xinruoyusixian/alan-package" "main" "pkg"
+
+
+UPDATE_PACKAGE "luci-app-adguardhome" "xinruoyusixian/alan-package" "main" "pkg"
+UPDATE_PACKAGE "adguardhome" "xinruoyusixian/alan-package" "main" "pkg"
+
+UPDATE_PACKAGE "zram-swap" "xinruoyusixian/alan-package" "main" "pkg"
+UPDATE_PACKAGE "taskd" "xinruoyusixian/alan-package" "main" "pkg"
+UPDATE_PACKAGE "luci-lib-xterm" "xinruoyusixian/alan-package" "main" "pkg"
+UPDATE_PACKAGE "luci-lib-taskd" "xinruoyusixian/alan-package" "main" "pkg"
+UPDATE_PACKAGE "luci-app-store" "xinruoyusixian/alan-package" "main" "pkg"
+#UPDATE_PACKAGE "quickstart" "xinruoyusixian/alan-package" "main" "pkg"
+#UPDATE_PACKAGE "luci-app-quickstart" "xinruoyusixian/alan-package" "main" "pkg"
+
+
 #更新软件包版本
 UPDATE_VERSION() {
 	local PKG_NAME=$1
